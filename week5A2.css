@@ -1,0 +1,142 @@
+body{
+    background-color:hsl(0, 100%, 74%) ;
+    background-image: url("bg-intro-desktop.png");
+    font-family: 'Poppins', sans-serif;
+    color: whitesmoke;
+    margin: 0;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:  100vh;
+    padding: 70px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1{
+    font-size: 50px;
+}
+
+.paragraph1{
+    border: hsl(249, 10%, 26%);
+    border: hsl(246, 25%, 77%);
+}
+
+.topBox{
+    background-color: hsl(248, 32%, 49%);
+    text-align: center;
+    width: 420px;
+    padding: 5px 10px ;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    box-shadow: 0px 5px rgb(218,101,104);
+}
+.rightBox{
+    background-color: whitesmoke;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 10px;
+}
+
+.terms{
+    color: hsl(246, 25%, 77%);
+    font-size: smaller;
+    text-align: center;
+}
+
+.smallTerms{
+    color: rgb(218,101,104);
+    font-weight: bold;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+input{
+    padding-left: 40px;
+    margin: 5px;
+    width: 100%;
+    height: 60px;
+    border: lightgray 1px solid;
+    border-radius: 10px;
+}
+
+input[type=text]{
+    font-weight: bold;
+    color: rgb(58, 61, 60);
+}
+
+input[type=email]{
+    font-weight: bold;
+    color: rgb(58, 61, 60);
+}
+
+input[type=password]{
+    font-weight: bold;
+    color: rgb(58, 61, 60);
+}
+
+input:focus{
+    border: hsl(248, 32%, 49%) 1px solid;
+    outline: none;
+}
+
+button{
+    background-color:hsl(154, 59%, 51%);
+    color: whitesmoke;
+    font-weight: bold;
+    width: 400px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-top: 10px;
+    border: rgb(59,182,127) 1px solid;
+    box-shadow: 0px 3px rgb(59,182,127);
+}
+
+@media screen and (max-width: 375px){
+
+    body{
+        background-image: url("bg-intro-mobile.png");
+    }
+
+    .container{
+        flex-direction: column;
+        
+    }
+
+    h1{
+        text-align: center;
+        font-size: 25;
+    }
+
+    .paragraph1{
+        text-align: center;
+    }
+
+    .topBox{
+       width: 270px;
+       margin-left: 10px;
+    }
+    
+    .rightBox{
+        width: 250px;
+        height: 400px;
+        border-radius: 10px;
+        padding: 20px;
+        margin-left: 10px;
+    }
+
+    button{
+        width: 250px;
+    }
+
+}
